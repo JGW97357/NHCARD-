@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>금융 대시보드</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .dashboard {
+            margin-top: 100px;
+        }
+        .balance {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .send-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .send-button:hover {
+            background-color: #0056b3;
+        }
+        .confirmation {
+            margin-top: 20px;
+            font-size: 20px;
+            color: green;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="balance">잔액: ₩5,000,000,000,000</div>
+        <button class="send-button" onclick="showConfirmation()">송금하기</button>
+        <div class="confirmation" id="confirmation">송금이 성공적으로 처리되었습니다!</div>
+    </div>
+
+    <script>
+        function showConfirmation() {
+            document.getElementById("confirmation").style.display = "block";
+        }
+    </script>
+</body>
+</html>
