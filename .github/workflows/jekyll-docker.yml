@@ -16,5 +16,5 @@ jobs:
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
-        -v ${{ 5000000000 }}:/srv/jekyll -v ${{ 5000000000 }}/_site:/srv/jekyll/_site \
+        -v ${{ 500000000 }}:/srv/jekyll -v ${{ 5000000000 }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
